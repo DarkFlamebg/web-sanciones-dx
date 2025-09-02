@@ -77,19 +77,19 @@ const AbusoFaccion = () => {
   ];
   return (
     <section className="container_abuso_comandos" id="jail-ac">
-      <Box
-        sx={{
-          backgroundColor: "#f2f2f2",
-          padding: "2rem",
-          borderRadius: "8px",
-        }}
+<Box sx={{ 
+      position: 'relative',
+      zIndex: 2,
+      textAlign: 'center',
+      marginBottom: '3rem',
+    }}
       >
         <Typography
           variant="h4"
           component="h2"
           sx={{ marginBottom: "1rem", padding: "0.5rem", fontWeight: "bold" }}
         >
-          Abuso de Comandos
+          Abuso de Facción
         </Typography>
         <Typography variant="body1" paragraph className="text-content">
           FA (Abusar de tu facción) Ya sea SAPD-SAFA-CNN-MECANICO-ABOGADOS

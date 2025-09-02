@@ -224,18 +224,53 @@ const JailDirecto = () => {
 
   return (
     <section className="container_jail" id="penalties">
-      <Box sx={{ padding: "2rem" }}>
-        <Typography
-          variant="h4"
-          gutterBottom
-          component="h2"
-          sx={{ marginBottom: "1rem", padding: "0.5rem", fontWeight: "bold" }}
-        >
-          Jails Directos
-        </Typography>
-        <Typography variant="body1" paragraph className="text-content">
-          Todas las siguientes faltas de rol se sancionarán sin aviso.
-        </Typography>
+      <Box sx={{ 
+              position: 'relative',
+              zIndex: 2,
+              textAlign: 'center',
+              marginBottom: '3rem'
+            }}>
+              <Typography 
+                variant="h3" 
+                component="h2" 
+                sx={{ 
+                  marginBottom: '1rem',
+                  fontWeight: '800',
+                  fontSize: { xs: '2rem', md: '2.5rem' },
+                  background: 'linear-gradient(135deg, #c9d2e2ff 0%, #b8c2d3ff 50%, #edeef0ff 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                  letterSpacing: '1px',
+                  position: 'relative'
+                }}
+              >
+                Jails Directos
+              </Typography>
+        {/* Línea decorativa animada */}
+                <Box sx={{
+                  width: '120px',
+                  height: '4px',
+                  background: 'linear-gradient(90deg, #e53e3e, #4299e1, #bb1ebbb7)',
+                  backgroundSize: '200% 100%',
+                  animation: 'gradient-shift 3s ease infinite',
+                  borderRadius: '2px',
+                  margin: '0 auto 1.5rem auto'
+                }} />
+        
+                <Typography 
+                  variant="h6" 
+                  sx={{ 
+                    color: '#ecedeeff',
+                    maxWidth: '600px',
+                    margin: '0 auto',
+                    fontWeight: 400,
+                    lineHeight: 1.6,
+                    fontSize: { xs: '1rem', md: '1.1rem' }
+                  }}
+                >
+                  Todas las siguentes faltas de rol serán sancionadas con Jail Directo.
+                </Typography>
         <Divider sx={{ marginBottom: "1rem" }} />
 
         <Masonry columns={{ xs: 1, sm: 2, md: 3 }} spacing={3}>
@@ -243,75 +278,166 @@ const JailDirecto = () => {
             <Box
               key={index}
               sx={{
-                backgroundColor: "#fff",
-                padding: "1.5rem",
-                border: "1px solid #ccc",
-                borderRadius: "8px",
-                boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
+                background: 'linear-gradient(135deg, #2d3748 0%, #1a202c 100%)',
+                padding: "2rem",
+                border: "1px solid rgba(255, 255, 255, 0.1)",
+                borderRadius: "16px",
+                boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
                 textAlign: "center",
-                minHeight: sancion.imagen ? "auto" : "150px",
+                minHeight: sancion.imagen ? "auto" : "180px",
                 justifyContent: sancion.imagen ? "flex-start" : "center",
-                transition: "transform 0.5s ease, box-shadow 0.3s ease", // Transiciones para el hover
-                "&:hover": {
-                  transform: "scale(1.05)", // Escala la tarjeta ligeramente
-                  boxShadow: "0 8px 12px rgba(0, 0, 0, 0.2)", // Aumenta la sombra
-                  backgroundImage: "linear-gradient(135deg, #e0e0e0, #f9f9f9)", // Invertir el degradado
+                transition: "all 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+                position: 'relative',
+                overflow: 'hidden',
+                backdropFilter: 'blur(10px)',
+                
+                // Efecto de brillo sutil
+                '&::before': {
+                  content: '""',
+                  position: 'absolute',
+                  top: 0,
+                  left: '-100%',
+                  width: '100%',
+                  height: '100%',
+                  background: 'linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent)',
+                  transition: 'left 0.5s ease-in-out',
                 },
+                
+                "&:hover": {
+                  transform: "translateY(-8px) scale(1.02)",
+                  boxShadow: "0 16px 48px rgba(0, 0, 0, 0.5)",
+                  background: "linear-gradient(135deg, #4a5568 0%, #2d3748 100%)",
+                  borderColor: "rgba(255, 255, 255, 0.2)",
+                  
+                  '&::before': {
+                    left: '100%',
+                  }
+                },
+                
+                // Efecto de focus para accesibilidad
+                '&:focus-within': {
+                  outline: '2px solid #4299e1',
+                  outlineOffset: '2px',
+                }
               }}
             >
+              {/* Indicador de categoría */}
+              <Box sx={{
+                position: 'absolute',
+                top: '12px',
+                right: '12px',
+                background: 'linear-gradient(45deg, #e53e3e, #c53030)',
+                padding: '4px 12px',
+                borderRadius: '20px',
+                fontSize: '0.75rem',
+                fontWeight: 600,
+                color: '#fff',
+                textTransform: 'uppercase',
+                letterSpacing: '0.5px',
+                boxShadow: '0 2px 8px rgba(229, 62, 62, 0.3)'
+              }}>
+                Jail
+              </Box>
+              
               <Typography
                 variant="h6"
-                component="p"
+                component="h3"
                 sx={{
-                  fontWeight: "500",
-                  marginBottom: sancion.imagen ? "0.5rem" : "0.25rem",
+                  fontWeight: "700",
+                  marginBottom: "1rem",
+                  color: "#f7fafc",
+                  fontSize: { xs: '1.1rem', md: '1.25rem' },
+                  lineHeight: 1.3,
+                  background: 'linear-gradient(135deg, #f7fafc 0%, #e2e8f0 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text'
                 }}
               >
                 {sancion.titulo}
               </Typography>
+
               <Typography
                 variant="body1"
-                color="#0e0e0e"
                 sx={{
-                  margin: sancion.imagen ? "0 0 0.5rem" : "0",
-                  flex: sancion.imagen ? "none" : "1",
+                  margin: "0 0 1rem 0",
                   fontWeight: "500",
+                  color: "#cbd5e0",
+                  lineHeight: 1.6,
+                  fontSize: '1rem'
                 }}
               >
                 {sancion.descripcion}
               </Typography>
+
               {sancion.explicacion && (
-                <Typography
-                  variant="body2"
-                  color="text.secondary"
-                  sx={{
-                    margin: sancion.imagen ? "0 0 1rem" : "0.5rem 0",
-                    fontStyle: "italic",
-                  }}
-                >
-                  {sancion.explicacion}
-                </Typography>
+                <Box sx={{
+                  background: 'rgba(255, 255, 255, 0.05)',
+                  padding: '0.75rem 1rem',
+                  borderRadius: '8px',
+                  border: '1px solid rgba(255, 255, 255, 0.08)',
+                  marginBottom: sancion.imagen ? '1.5rem' : '0',
+                  backdropFilter: 'blur(5px)'
+                }}>
+                  <Typography
+                    variant="body2"
+                    sx={{
+                      fontStyle: "italic",
+                      color: "#a0aec0",
+                      fontSize: '0.9rem',
+                      lineHeight: 1.5
+                    }}
+                  >
+                    💡 {sancion.explicacion}
+                  </Typography>
+                </Box>
               )}
 
               {sancion.imagen && (
                 <Box
-                  component="img"
-                  src={sancion.imagen}
-                  alt={sancion.alt}
                   sx={{
                     width: "100%",
-                    maxWidth: "300px",
-                    height: "auto",
-                    borderRadius: "4px",
-                    marginTop: "0.5rem",
-                    boxShadow: "0 2px 6px rgba(0, 0, 0, 0.2)",
+                    maxWidth: "320px",
+                    position: 'relative',
+                    overflow: 'hidden',
+                    borderRadius: "12px",
+                    marginTop: "auto"
                   }}
-                />
+                >
+                  <Box
+                    component="img"
+                    src={sancion.imagen}
+                    alt={sancion.alt}
+                    sx={{
+                      width: "100%",
+                      height: "auto",
+                      borderRadius: "12px",
+                      boxShadow: "0 8px 24px rgba(0, 0, 0, 0.4)",
+                      transition: "transform 0.3s ease",
+                      "&:hover": {
+                        transform: "scale(1.05)"
+                      }
+                    }}
+                  />
+                  {/* Overlay sutil en la imagen */}
+                  <Box sx={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    background: 'linear-gradient(135deg, transparent 0%, rgba(0, 0, 0, 0.1) 100%)',
+                    borderRadius: "12px",
+                    pointerEvents: 'none'
+                  }} />
+                </Box>
               )}
             </Box>
+
+
           ))}
         </Masonry>
       </Box>
