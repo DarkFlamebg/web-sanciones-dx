@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/web-sanciones-dx/static/css/main.3e76b06d.css",
-    "main.js": "/web-sanciones-dx/static/js/main.c8f5e330.js",
+    "main.js": "/web-sanciones-dx/static/js/main.a6888462.js",
     "static/js/453.23cc8104.chunk.js": "/web-sanciones-dx/static/js/453.23cc8104.chunk.js",
     "static/media/ej-sancion-dm-2.gif": "/web-sanciones-dx/static/media/ej-sancion-dm-2.edac2848e10433c7ef9b.gif",
     "static/media/ej-extra-ab.gif": "/web-sanciones-dx/static/media/ej-extra-ab.94fdb7e5388122eb3093.gif",
@@ -29,11 +29,11 @@
     "static/media/ej-sancion-IOOC.png": "/web-sanciones-dx/static/media/ej-sancion-IOOC.b1ec0b5ea8cbe1396f18.png",
     "index.html": "/web-sanciones-dx/index.html",
     "main.3e76b06d.css.map": "/web-sanciones-dx/static/css/main.3e76b06d.css.map",
-    "main.c8f5e330.js.map": "/web-sanciones-dx/static/js/main.c8f5e330.js.map",
+    "main.a6888462.js.map": "/web-sanciones-dx/static/js/main.a6888462.js.map",
     "453.23cc8104.chunk.js.map": "/web-sanciones-dx/static/js/453.23cc8104.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3e76b06d.css",
-    "static/js/main.c8f5e330.js"
+    "static/js/main.a6888462.js"
   ]
 }
