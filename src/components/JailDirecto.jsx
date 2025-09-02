@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, Divider, Grid } from "@mui/material";
+import { Box, Typography, Divider } from "@mui/material";
 import Masonry from "@mui/lab/Masonry";
 
 import SancionDMlvl11 from "../assets/jaildirecto/ej-sancion-dm-2.gif";
@@ -247,9 +247,9 @@ const JailDirecto = () => {
               >
                 Jails Directos
               </Typography>
-        {/* Línea decorativa animada */}
+                {/* Línea decorativa animada */}
                 <Box sx={{
-                  width: '120px',
+                  width: '220px',
                   height: '4px',
                   background: 'linear-gradient(90deg, #e53e3e, #4299e1, #bb1ebbb7)',
                   backgroundSize: '200% 100%',
@@ -258,20 +258,43 @@ const JailDirecto = () => {
                   margin: '0 auto 1.5rem auto'
                 }} />
         
-                <Typography 
-                  variant="h6" 
-                  sx={{ 
-                    color: '#ecedeeff',
-                    maxWidth: '600px',
-                    margin: '0 auto',
-                    fontWeight: 400,
-                    lineHeight: 1.6,
-                    fontSize: { xs: '1rem', md: '1.1rem' }
-                  }}
-                >
-                  Todas las siguentes faltas de rol serán sancionadas con Jail Directo.
-                </Typography>
-        <Divider sx={{ marginBottom: "1rem" }} />
+                {/* Descripción mejorada */}
+                <Box sx={{
+                  background: 'rgba(65, 67, 150, 0.1)',
+                  padding: '1.5rem 2rem',
+                  borderRadius: '16px',
+                  border: '1px solid rgba(56, 178, 172, 0.2)',
+                  backdropFilter: 'blur(10px)',
+                  maxWidth: '700px',
+                  margin: '0 auto',
+                  position: 'relative',
+                  
+                  '&::before': {
+                    content: '""',
+                    position: 'absolute',
+                    left: 0,
+                    top: 0,
+                    bottom: 0,
+                    width: '4px',
+                    background: 'linear-gradient(180deg, #b238b2ff, #ac4fd1ff)',
+                    borderRadius: '0 4px 4px 0'
+                  }
+                }}>
+                  <Typography 
+                    variant="h6" 
+                    sx={{ 
+                      color: '#ffffffff',
+                      fontWeight: 600,
+                      lineHeight: 1.6,
+                      fontSize: { xs: '1rem', md: '1.1rem' },
+                      textAlign: 'center'
+                    }}
+                  >
+                    Sanciones específicas por el mal uso de comandos del servidor
+                  </Typography>
+                </Box>
+                
+        <Divider sx={{ marginBottom: "2rem" }} />
 
         <Masonry columns={{ xs: 1, sm: 2, md: 3 }} spacing={3}>
           {sanciones.map((sancion, index) => (

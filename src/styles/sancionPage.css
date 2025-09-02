@@ -55,26 +55,49 @@
     line-height: 1.6;
   }
 
-  /* Container principal mejorado */
-  .container_jail {
-    padding: 3rem 2rem;
-    background: linear-gradient(135deg, #1a202c 0%, #2d3748 50%, #1a202c 100%);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-    color: #e2e8f0;
-    position: relative;
-    overflow: hidden;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-  }
-   /* Container Abuso de Comandos - oscuro grisáceo */
-  .container_abuso_comandos {
+ /* Container principal mejorado - Jail Directo */
+.container_jail {
   padding: 3rem 2rem;
-  background: linear-gradient(135deg, #1f2937 0%, #2d3748 50%, #1a202c 100%);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25); /* más suave que jail */
-  color: #e2e8f0; /* texto claro */
+  background: linear-gradient(135deg, #161b22 0%, #1e293b 50%, #111827 100%);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  color: #e2e8f0;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Container Abuso de Comandos */
+.container_abuso_comandos {
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #1c1f24 0%, #2d3642 50%, #1a202c 100%);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  color: #e2e8f0;
   position: relative;
   overflow: hidden;
 }
+
+/* Container Abuso de Facción */
+.container_abuso_faccion {
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #1a202c 0%, #23403f 50%, #152524 100%);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  color: #e2e8f0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Container Jails Extra */
+.container_jail_extra {
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #0f0f0f 0%, #1c1c1e 50%, #121826 100%);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  color: #e2e8f0;
+  position: relative;
+  overflow: hidden;
+}
+
+
 
   .container_abuso_comandos::before {
     content: "";
@@ -100,6 +123,29 @@
     animation: shimmer 3s linear infinite;
   }
 
+  .container_abuso_faccion::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #e53e3e, #292ccf, #2421ac, #e53e3e);
+    background-size: 200% 100%;
+    animation: shimmer 3s linear infinite;
+  }
+  .container_jail_extra::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #7be53e, #b700ff, #ffa500, #e59d3e);
+    background-size: 200% 100%;
+    animation: shimmer 3s linear infinite;
+  }
+  
   @keyframes shimmer {
     0% { background-position: -200% 0; }
     100% { background-position: 200% 0; }
@@ -190,3 +236,8 @@
     background: linear-gradient(135deg, #718096, #4a5568);
   }
 
+  @keyframes gradient-shift {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
