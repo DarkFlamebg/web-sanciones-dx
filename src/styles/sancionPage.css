@@ -1,0 +1,86 @@
+/* SancionesPage.css */
+.portada {
+  background-image: url('../assets/Landing/imagenlon-2.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+}
+.content-portada {
+  text-align: center;
+  color: white; 
+}
+.content-portada h3 {
+  margin-bottom: 16px; 
+}
+.content-portada h6 {
+  margin-top: 0; 
+}
+
+/* Estilo general para la página */
+.container_jail {
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title-jail {
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .text-content {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* .content-jail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  } */
+  
+  .sancion {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .sancion:hover {
+    transform: translateY(-5px);
+  }
+  
+  .sancion p {
+    margin: 0.5rem 0;
+    color: #444;
+  }
+  
+  .sancion img {
+    max-width: 100%;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+  }
+  
+  #penalties {
+    margin-top: 2rem;
+  }
+  
+  /* Estilos adicionales para la página general */
+ 
+  
+  /*.SancionesPage .content-wrapper {
+    margin-left: 250px; /* Para alinear con la SlideBar 
+  }*/
+  

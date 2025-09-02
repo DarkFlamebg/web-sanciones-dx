@@ -1,0 +1,30 @@
+/* src/LandingPage.css */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    animation: backgroundTransition 15s ease-in-out infinite;
+    background-image: url('../assets/Landing/sa-mp-051.png');
+  }
+  
+  /* Define la transición entre imágenes de fondo */
+  /* @keyframes backgroundTransition {
+    0% {
+      background-image: url('../assets/Landing/sa-mp-051.png');
+    }
+    33% {
+      background-image: url('../assets/Landing/imagen-6.png');
+    }
+    66% {
+      background-image: url('../assets/Landing/imagenlon-2.png');
+    }
+    100% {
+      background-image: url('../assets/Landing/sa-mp-051.png');
+    }
+  }
+   */
