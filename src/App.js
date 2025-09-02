@@ -2,7 +2,8 @@ import './App.css';
 import Navbar from './components/Navbar.jsx';
 import Landingpage from './pages/Landingpage.jsx';
 import SancionesPage from './pages/SancionesPage.jsx'; // Importa la página de sanciones
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 function App() {
   return (
