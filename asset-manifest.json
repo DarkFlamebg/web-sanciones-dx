@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/web-sanciones-dx/static/css/main.3e76b06d.css",
-    "main.js": "/web-sanciones-dx/static/js/main.a6888462.js",
+    "main.css": "/web-sanciones-dx/static/css/main.bd608a62.css",
+    "main.js": "/web-sanciones-dx/static/js/main.87058222.js",
     "static/js/453.23cc8104.chunk.js": "/web-sanciones-dx/static/js/453.23cc8104.chunk.js",
     "static/media/ej-sancion-dm-2.gif": "/web-sanciones-dx/static/media/ej-sancion-dm-2.edac2848e10433c7ef9b.gif",
     "static/media/ej-extra-ab.gif": "/web-sanciones-dx/static/media/ej-extra-ab.94fdb7e5388122eb3093.gif",
@@ -23,17 +23,17 @@
     "static/media/ej-objecto-troll.png": "/web-sanciones-dx/static/media/ej-objecto-troll.e7cce8c80fbbe5744cf8.png",
     "static/media/imagenlon-2.png": "/web-sanciones-dx/static/media/imagenlon-2.b6a3c84d2698141e8081.png",
     "static/media/ejemplo-AB-1.png": "/web-sanciones-dx/static/media/ejemplo-AB-1.515fb6fbccf024819b8e.png",
-    "static/media/ej-sancion1.png": "/web-sanciones-dx/static/media/ej-sancion1.107e5d1f971261088adb.png",
+    "static/media/ej-sancion1.png": "/web-sanciones-dx/static/media/ej-sancion1.24a0aaccd78d6a100683.png",
     "static/media/MUD-1.png": "/web-sanciones-dx/static/media/MUD-1.85328fb76733d6c4bf65.png",
     "static/media/ej-adv.png": "/web-sanciones-dx/static/media/ej-adv.e76c1cd3f3239443a0d6.png",
     "static/media/ej-sancion-IOOC.png": "/web-sanciones-dx/static/media/ej-sancion-IOOC.b1ec0b5ea8cbe1396f18.png",
     "index.html": "/web-sanciones-dx/index.html",
-    "main.3e76b06d.css.map": "/web-sanciones-dx/static/css/main.3e76b06d.css.map",
-    "main.a6888462.js.map": "/web-sanciones-dx/static/js/main.a6888462.js.map",
+    "main.bd608a62.css.map": "/web-sanciones-dx/static/css/main.bd608a62.css.map",
+    "main.87058222.js.map": "/web-sanciones-dx/static/js/main.87058222.js.map",
     "453.23cc8104.chunk.js.map": "/web-sanciones-dx/static/js/453.23cc8104.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3e76b06d.css",
-    "static/js/main.a6888462.js"
+    "static/css/main.bd608a62.css",
+    "static/js/main.87058222.js"
   ]
 }
