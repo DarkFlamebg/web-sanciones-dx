@@ -38,7 +38,7 @@ function Navbar() {
         }}
       >
         <div className="logo">
-          <span style={{ fontSize: '20px' }}>Todasmienten</span>
+          <span style={{ fontSize: '20px' }}>Sanciones</span>
         </div>
         <ul className="navbar-nav">
           <li><Link to="/">Inicio</Link></li>
